@@ -2,14 +2,14 @@
 let lostItems = JSON.parse(localStorage.getItem("lostItems")) || [
   {
     name: "Wallet found at park avenue 1/3",
-    image: "wallet1.jpg",
+    image: "wallet1.jpeg",
     finder: "John Doe",
     contact: "john@gmail.com",
     claims: []
   },
   {
     name: "Keys found at street 1 block 3",
-    image: "keys1.jpg",
+    image: "keys1.jpeg",
     finder: "Jane Smith",
     contact: "jane@gmail.com",
     claims: []
