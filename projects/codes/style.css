@@ -4,11 +4,11 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  background: #f4f4f4;
+  background: linear-gradient(to top, #f8f9fa, #a2c8f3); /* Soft light gradient background */
 }
 
 header {
-  background: #0073e6;
+  background: linear-gradient(to right, #4a90e2, #a2c8f3); /* Soft blue to light blue gradient */
   color: white;
   padding: 15px;
 }
@@ -19,6 +19,9 @@ header {
   margin: 10px 0;
   border: 1px solid #ddd;
   border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #333;
 }
 
 #items-grid {
@@ -33,10 +36,11 @@ header {
 .item-card {
   border: 1px solid #ddd;
   padding: 10px;
-  background: white;
+  background: #ffffff;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   transition: transform 0.3s;
+  background: linear-gradient(45deg, #ffffff, #f8f9fa); /* Soft gradient for item cards */
 }
 
 .item-card img {
@@ -69,13 +73,22 @@ form input, form button, form textarea {
   margin: 10px 0;
   border: 1px solid #ddd;
   border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 16px;
 }
 
 button {
-  background: #0073e6;
+  background: linear-gradient(to right, #0073e6, #4a90e2); /* Vibrant blue to soft blue gradient */
   color: white;
   border: none;
   cursor: pointer;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: linear-gradient(to right, #4a90e2, #0073e6); /* Reverse the gradient on hover */
 }
 
 /* Modal Styles */
@@ -88,7 +101,7 @@ button {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
@@ -98,6 +111,7 @@ button {
   border: 1px solid #888;
   width: 50%;
   text-align: center;
+  border-radius: 8px;
 }
 
 #claim-confirmation-modal .modal-content {
@@ -125,6 +139,7 @@ button {
 /* Hover effect for item cards */
 .item-card:hover {
   transform: translateY(-10px);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow effect */
 }
 
 /* Responsive Design */
